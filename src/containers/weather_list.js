@@ -19,13 +19,13 @@ class WeatherList extends Component {
 			<tr key={name}>
 				<td>{name}</td>
 				<td>
-					<Chart data={temp} colour="blue" />
+					<Chart data={temp} colour="blue" units="K" />
 				</td>
 				<td>
-					<Chart data={pressure} colour="green" />
+					<Chart data={pressure} colour="green" units="hPa" />
 				</td>
 				<td>
-					<Chart data={humidity} colour="red" />
+					<Chart data={humidity} colour="red" units="%" />
 				</td>
 			</tr>
 		);
@@ -39,9 +39,9 @@ class WeatherList extends Component {
 				<thead>
 				<tr>
 					<th>City</th>
-					<th>Temperature</th>
-					<th>Pressure</th>
-					<th>Humidity</th>
+					<th>Temperature (c)</th>
+					<th>Pressure (hPa)</th>
+					<th>Humidity (%)</th>
 				</tr>
 				</thead>
 				<tbody>
